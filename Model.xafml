@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="18.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemMobileModule" Version="18.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" ImageName="" DefaultFocusedItem="">
+      <Items>
+        <StaticText Id="AboutText" HorizontalAlign="Center" Caption="AboutText(2)" Text="{0:ProductName}&lt;br&gt;{0:Version}&lt;br&gt;&lt;br&gt;{0:Copyright}&lt;br&gt;&lt;br&gt;{0:Description}" />
+        <StaticImage Id="Logo" Caption="Logo(1)" />
+        <StaticImage Id="mdt-logo" ImageName="mdt-logo" Caption="mdt-logo" SizeMode="StretchImage" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" ShowCaption="False" Index="0" RelativeSize="100" Caption="Main" IsNewNode="True">
+          <LayoutItem Id="AboutText" ViewItem="AboutText" Index="0" RelativeSize="100" IsNewNode="True" />
+        </LayoutGroup>
+        <LayoutItem Id="AboutText" Removed="True" />
+        <LayoutItem Id="Logo" RelativeSize="4.2666666666666666" Removed="True" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+      <Items>
+        <StaticImage Id="LogonImage" ImageName="mdt-logo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RootGroup">
+            <LayoutGroup Id="ImageGroup">
+              <LayoutItem Id="LogonImage" MaxSize="200, 300" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Cotizacion_Contactos_ListView">
+      <RowLayout FontColor="White" />
+    </ListView>
+    <ListView Id="Cotizacion_ListView" DataAccessMode="Server">
+      <Columns>
+        <ColumnInfo Id="IdCotizacion" PropertyEditorType="DevExpress.ExpressApp.Mobile.Editors.MobileNumberPropertyEditor" DataSourcePropertyIsNullMode="CustomCriteria" />
+      </Columns>
+      <RowLayout FontColor="White" />
+    </ListView>
+  </Views>
+</Application>

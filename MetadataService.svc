@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Innotech.MDT.Cotizador.Mobile.MetadataService" CodeBehind="MetadataService.svc.cs" %>
